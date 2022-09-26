@@ -6,15 +6,38 @@ import EmployeesList from '../employees-list/employees-list';
 import EmployeesAddForm from '../employees-add-form/employees-add-form';
 
 const App = () => {
+
+    const data = [
+        {
+            name: 'John C.',
+            salary: 800,
+            increase: false,
+            id: 1,
+        },
+        {
+            name: 'Alex M.',
+            salary: 3000,
+            increase: true,
+            id: 2,
+        },
+        {
+            name: 'Cesare B.',
+            salary: 8000,
+            increase: false,
+            id: 3,
+        }
+    ];
+
+
     return (
         <div className="app">
-            <AppInfo/>
+            <AppInfo />
             <div className="search-panel">
-                <SearchPanel/>
-                <AppFilter/>
+                <SearchPanel />
+                <AppFilter />
             </div>
-            <EmployeesList/>
-            <EmployeesAddForm/>
+            <EmployeesList data={data} />
+            <EmployeesAddForm />
         </div>
     );
 };
