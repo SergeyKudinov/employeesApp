@@ -1,0 +1,10 @@
+@import '../../variables.scss';
+
+.search-panel {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: $blue-grey;
+    border-radius: $border-radius-4;
+    box-shadow: $box-shadow;
+    color: $white;
+}
